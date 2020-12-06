@@ -8,7 +8,13 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+		<sonar.host.url>https://sonarcloud.io/</sonar.host.url>
+		<!--<sonar.login>2d6192595aad46aaa6ed30a14fe8522f837aff1e</sonar.login>-->
+        	<sonar.projectName>jenkins-sonar</sonar.projectName>
+        	<sonar.projectVersion>master</sonar.projectVersion>
+        	<sonar.test.exclusions>**/test/**/*.*</sonar.test.exclusions>
+        	<sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*</sonar.exclusions>
+     	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
